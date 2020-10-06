@@ -25,7 +25,7 @@ export default function Password({onChange}) {
 				}
 			});
 		}
-	}, [isValid]);
+	}, [isValid, value.password, onChange]);
 
 	return (
 		<>
