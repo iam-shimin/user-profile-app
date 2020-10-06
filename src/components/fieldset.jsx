@@ -14,7 +14,7 @@ function Fieldset({id: givenId, label, name, type, value, className, onChange, .
 }
 
 Fieldset.propTypes = {
-	id: PropTypes.string.isRequired,
+	id: PropTypes.string,
 	label: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,
 	type: PropTypes.string.isRequired,
