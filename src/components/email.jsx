@@ -25,10 +25,10 @@ export default function Email({ name = "email", onChange }) {
 					})
 					.catch(error => setError(error));
 			}
-		}, 950);
+		}, 1000);
 
 		return () => clearTimeout(timer);
-	}, [value]);
+	}, [value, name, onChange]);
 
 	return (
 	<>
