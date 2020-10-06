@@ -27,6 +27,13 @@
 .form input {
 	margin: 0.4rem 0;
 	padding: 0.5rem 0.3rem;
+	border-radius: 0.2rem;
+	border: solid 1px;
+}
+
+.form input:focus,
+.form button:focus {
+	box-shadow: 0 0 0 2px rebeccapurple;
 }
 
 .form button {
@@ -34,6 +41,12 @@
 	margin: auto;
 	font-size: 1.3rem;
 	padding: 0.7rem 1rem;
+	border-radius: 0.4rem;
+	border: solid 2px;
+}
+
+.form button:disabled {
+	color: #555;
 }
 
 .validation-error {
