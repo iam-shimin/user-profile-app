@@ -17,7 +17,7 @@ export default function RegistrationPage() {
 			</form>
 
 			<div className="w-50 mg-a">
-				Have an account? <Link href="/">Log In</Link>
+				Have an account? <Link to="/login">Log In</Link>
 			</div>
 		</section>
 	)
