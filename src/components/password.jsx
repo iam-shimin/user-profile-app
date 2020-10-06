@@ -30,7 +30,7 @@ export default function Password({onChange}) {
 			<Fieldset label="Password" value={value.password} onChange={handleChange} name="password" type="password" />
 			<Fieldset label="Confirm Password" value={value['c-password']} onChange={handleChange} name="c-password" type="password" />
 
-			{hasError && <small className="validation-error">Passwords should match</small>}
+			{!isValid && <small className="validation-error">Passwords should match</small>}
 		</>
 	)
 }

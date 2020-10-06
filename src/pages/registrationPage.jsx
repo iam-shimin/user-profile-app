@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Fieldset from 'components/fieldset';
+import Password from 'components/password';
 
 import 'style/form.css';
 
@@ -11,8 +12,7 @@ export default function RegistrationPage() {
 			<form className="form form--registration-form">
 				<Fieldset label="Email" name="username" />
 				<Fieldset label="Phone" name="phone" type="tel" />
-				<Fieldset label="Password" name="password" type="password" />
-				<Fieldset label="Confirm Password" name="c-password" type="password" />
+				<Password onChange={console.log} />
 				<button>Submit</button>
 			</form>
 
