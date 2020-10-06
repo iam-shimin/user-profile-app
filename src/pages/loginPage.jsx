@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import Fieldset from 'components/fieldset';
+
 import 'style/form.css';
 
 export default function LoginPage() {
@@ -22,26 +24,18 @@ export default function LoginPage() {
 	return (
 		<section>
 			<form className="form form--login" onSubmit={handleSubmit}>
-				<fieldset>
-					<label htmlFor="email">Email</label>
-					<input
-						type="email"
-						value={values.email}
-						onChange={handleChange}
-						id="email"
-						name="email" />
-				</fieldset>
+				<Fieldset
+					label="Email"
+					name="email"
+					value={values.email}
+					onChange={handleChange} />
 
-				<fieldset>
-					<label htmlFor="pwd">Password</label>
-					<input
-						type="password"
-						value={values.password}
-						onChange={handleChange}
-						id="pwd"
-						name="password" />
-				</fieldset>
-
+				<Fieldset
+					label="Password"
+					name="password"
+					value={values.password}
+					onChange={handleChange} />
+					
 				<button>Submit</button>
 			</form>
 
