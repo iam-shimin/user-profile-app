@@ -19,7 +19,7 @@ export default function LoginPage() {
 
 	return (
 		<div>
-			<form onSubmit={handleSubmit}>
+			<form className="form form--login" onSubmit={handleSubmit}>
 				<label htmlFor="email">Email</label>
 				<input
 					type="email"
