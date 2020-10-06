@@ -1,8 +1,6 @@
+@import './form.css';
+
 .form--login {
-	display: flex;
-	flex-direction: column;
-	width: 60%;
-	margin: auto;
 	margin-top: 7rem;
 }
 
