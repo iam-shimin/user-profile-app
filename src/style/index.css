@@ -6,3 +6,29 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.loader.active {
+  height: 10px;
+  background: #00ffe7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.loader.active::after {
+  content: '';
+  height: 10px;
+  position: absolute;
+  background: rebeccapurple;
+  animation: loading 0.8s infinite;
+}
+
+@keyframes loading {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
