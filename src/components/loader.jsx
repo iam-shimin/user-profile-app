@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-function Loader(isLoading) {
+function Loader({isLoading}) {
 	return <div className={`loader${isLoading? ' active': ''}`}></div>
 }
 
