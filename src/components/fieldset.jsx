@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Fieldset({id: givenId, label, name, type, value,  onChange, ...props}) {
+function Fieldset({id: givenId, label, name, type, value, className, onChange, ...props}) {
 
 	const id = givenId || name;
 	
 	return (
 		<fieldset {...props}>
 			<label htmlFor={id}>{label}</label>
-			<input type={type} value={value} name={name} id={id} onChange={onChange && onChange} />
+			<input type={type} value={value} name={name} id={id} className={className} onChange={onChange && onChange} />
 		</fieldset>
 	)
 }
