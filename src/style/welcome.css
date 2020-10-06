@@ -32,3 +32,33 @@
 .app-header nav a:focus{
 	box-shadow: 0 0 0 2px #eee;
 }
+
+.time-desc,
+.user-details span{
+	display: block;
+}
+
+.time-desc span {
+	color: rgb(133, 131, 131);
+}
+
+.user-details {
+	margin-top: 4rem;
+}
+
+.term {
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+.user-details {
+	border: solid 2px;
+	border-radius: 0.3rem;
+	padding: 2rem 6rem;
+}
+
+.welcome-text {
+	width: 50%;
+	margin: auto;
+	font-size: 4rem;
+}
