@@ -4,18 +4,18 @@ import { updateToken, clearToken } from 'utils/storage';
 // import history from 'utils/history';
 
 
-export function login(email, password) {
+export function login(userCredentials, callback) {
 	return dispatch => {
 		dispatch({type: loginTypes.LOGIN_PENDING});
 		http
-			.post('/auth/login', {
-				email,
-				password
+			.post('/auth/login', userCredentials)
+			.then(response => {
+				dispatch({
+					type: loginTypes.LOGIN_SUCCESS,
+					payload: response.data.data
+				});
+				callback();
 			})
-			.then(data => dispatch({
-				type: loginTypes.LOGIN_SUCCESS,
-				payload: data
-			}))
 			.catch(error => dispatch({
 				type: loginTypes.LOGIN_FAILED,
 				payload: error

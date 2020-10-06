@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import Fieldset from 'components/fieldset';
 
+import { login } from 'store/actionCreators';
+
 import 'style/form.css';
 
-export default function LoginPage() {
+function LoginPage({ login, history }) {
 
 	const [values, setValues] = useState({
 		email: '',
@@ -14,7 +17,9 @@ export default function LoginPage() {
 
 	function handleSubmit(event) {
 		event.preventDefault();
-		// make api call with values
+		login(values, () => {
+			history.push('/');
+		})
 	}
 
 	function handleChange(event) {
@@ -46,3 +51,9 @@ export default function LoginPage() {
 		</section>
 	);
 }
+
+const mapDispatchToProps = {
+	login: login
+}
+
+export default connect(null, mapDispatchToProps)(LoginPage);
