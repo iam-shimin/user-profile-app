@@ -22,21 +22,25 @@ export default function LoginPage() {
 	return (
 		<div>
 			<form className="form form--login" onSubmit={handleSubmit}>
-				<label htmlFor="email">Email</label>
-				<input
-					type="email"
-					value={values.email}
-					onChange={handleChange}
-					id="email"
-					name="email" />
+				<fieldset>
+					<label htmlFor="email">Email</label>
+					<input
+						type="email"
+						value={values.email}
+						onChange={handleChange}
+						id="email"
+						name="email" />
+				</fieldset>
 
-				<label htmlFor="pwd">Password</label>
-				<input
-					type="password"
-					value={values.password}
-					onChange={handleChange}
-					id="pwd"
-					name="password" />
+				<fieldset>
+					<label htmlFor="pwd">Password</label>
+					<input
+						type="password"
+						value={values.password}
+						onChange={handleChange}
+						id="pwd"
+						name="password" />
+				</fieldset>
 
 				<button>Submit</button>
 			</form>
