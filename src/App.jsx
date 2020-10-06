@@ -16,7 +16,7 @@ function App() {
       <Switch>
         <Route path="/login" component={LoginPage} />
         <Route path="/register" component={RegistrationPage} />
-        <Route path="/" exact component={AuthedWelcomePage} />
+        <Route path="/" component={AuthedWelcomePage} />
         <Redirect to="/" />
       </Switch>
     </BrowserRouter>
