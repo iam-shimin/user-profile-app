@@ -2,6 +2,7 @@
   "name": "profile-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://iam-shimin.github.io/user-profile-app/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
