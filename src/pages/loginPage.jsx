@@ -20,7 +20,7 @@ export default function LoginPage() {
 	}
 
 	return (
-		<div>
+		<section>
 			<form className="form form--login" onSubmit={handleSubmit}>
 				<fieldset>
 					<label htmlFor="email">Email</label>
@@ -44,6 +44,10 @@ export default function LoginPage() {
 
 				<button>Submit</button>
 			</form>
-		</div>
+
+			<div className="w-50 mg-a">
+				New here? <Link to="/register">Register</Link>
+			</div>
+		</section>
 	);
 }
