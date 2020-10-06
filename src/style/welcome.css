@@ -1,0 +1,34 @@
+.app-header {
+	display: flex;
+	padding: 1rem 2rem;
+	background: rebeccapurple;
+}
+
+.app-header nav {
+	margin-left: auto;
+}
+
+.app-header span {
+	font-size: 1.5rem;
+	color: #eee;
+}
+
+.app-header nav a {
+	display: block;
+	font-size: 1.4rem;
+	background: #c8c4c7;
+	text-decoration: none;
+	padding: 0.4rem;
+	color: #000;
+	border-radius: 0.2rem;
+}
+
+.app-header nav a:focus,
+.app-header nav a:hover {
+	background: #000;
+	color: #c8c4c7;
+}
+
+.app-header nav a:focus{
+	box-shadow: 0 0 0 2px #eee;
+}
