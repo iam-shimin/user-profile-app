@@ -7,7 +7,7 @@ axios.interceptors.response.use(null, error => {
 })
 
 export function setToken(token) {
-	axios.defaults.headers.common['Authorisation'] = token;
+	axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 }
 
 export default {
