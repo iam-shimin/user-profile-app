@@ -6,6 +6,7 @@ import WelcomePage from 'pages/welcomePage';
 import RegistrationPage from 'pages/registrationPage';
 import withAuth from 'components/withAuth';
 import Loader from 'components/loader';
+import Alert from 'components/alert';
 
 import 'style/App.css';
 
@@ -15,6 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <Loader />
+      <Alert />
       <Switch>
         <Route path="/login" component={LoginPage} />
         <Route path="/register" component={RegistrationPage} />
