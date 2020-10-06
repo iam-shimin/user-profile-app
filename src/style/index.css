@@ -32,3 +32,12 @@ body {
     width: 100%;
   }
 }
+
+.alert-box {
+  border: solid #e62020;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  right: 2rem;
+}
