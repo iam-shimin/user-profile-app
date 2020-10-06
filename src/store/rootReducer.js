@@ -7,8 +7,8 @@ export default function rootReducer(state = initialState, action) {
 		return {...state, appPendingState: true};
 	}
 
-	if (action.type.endsWith('FAILURE')) {
-		return {...state, appErrorState: action.payload}
+	if (action.type.endsWith('FAILED')) {
+		return {...state, appErrorState: action.payload, appPendingState: false}
 	}
 
 	switch (action.type) {
@@ -35,7 +35,7 @@ export default function rootReducer(state = initialState, action) {
 				appPendingState: false,
 				appErrorState: null
 			};
-			
+
 		default:
 			return state;
 	}
