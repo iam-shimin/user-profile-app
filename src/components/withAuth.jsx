@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
 export default function withAuth(WrappedComponent) {
@@ -18,5 +19,9 @@ export default function withAuth(WrappedComponent) {
 		}
 	}
 
-	return Auth;
+	const mapStateToProps = state => ({
+		isAuthed: !!state.id
+	})
+
+	return connect(mapStateToProps)(Auth);
 }
