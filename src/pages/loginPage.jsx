@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import 'style/login.css';
+
 export default function LoginPage() {
 
 	const [values, setValues] = useState({
