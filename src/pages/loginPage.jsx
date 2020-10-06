@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import 'style/login.css';
+import 'style/form.css';
 
 export default function LoginPage() {
 
