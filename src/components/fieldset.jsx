@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Fieldset({id, label, name, type, onChange, ...props}) {
+function Fieldset({id: givenId, label, name, type, onChange, ...props}) {
+
+	const id = givenId || name;
+	
 	return (
 		<fieldset {...props}>
 			<label htmlFor={id}>{label}</label>
