@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 function Loader(isLoading) {
-	return isLoading && <div className="loader"></div>
+	return <div className={`loader${isLoading? ' active': ''}`}></div>
 }
 
 const mapStateToProps = state => ({
