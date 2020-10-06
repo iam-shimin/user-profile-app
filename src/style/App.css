@@ -5,3 +5,7 @@
 .w-50 {
 	width: 50%;
 }
+
+.green-br {
+	border: solid 2px green !important;
+}
