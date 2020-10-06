@@ -20,7 +20,7 @@ export default function LoginPage() {
 	return (
 		<div>
 			<form onSubmit={handleSubmit}>
-				<label htmlFor="email" />
+				<label htmlFor="email">Email</label>
 				<input
 					type="email"
 					value={values.email}
@@ -28,7 +28,7 @@ export default function LoginPage() {
 					id="email"
 					name="email" />
 
-				<label htmlFor="pwd" />
+				<label htmlFor="pwd">Password</label>
 				<input
 					type="password"
 					value={values.password}
