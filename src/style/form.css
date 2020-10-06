@@ -4,3 +4,34 @@
 	width: 60%;
 	margin: auto;
 }
+
+.form {
+	margin-top: 7rem;
+}
+
+.form input,
+.form label {
+	font-size: 1.2rem;
+}
+
+.form label {
+	color: #111;
+}
+
+.form fieldset {
+	border: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.form input {
+	margin: 0.4rem 0;
+	padding: 0.5rem 0.3rem;
+}
+
+.form button {
+	width: max-content;
+	margin: auto;
+	font-size: 1.3rem;
+	padding: 0.7rem 1rem;
+}
