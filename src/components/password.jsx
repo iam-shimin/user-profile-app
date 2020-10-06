@@ -19,8 +19,10 @@ export default function Password({onChange}) {
 	useEffect(() => {
 		if (isValid) {
 			onChange({
-				value: value.password,
-				name: 'password'
+				target: {
+					value: value.password,
+					name: 'password'
+				}
 			});
 		}
 	}, [isValid]);
